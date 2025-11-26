@@ -1,15 +1,16 @@
+@profile
+def es_primo(numero):
+    if numero <= 1:
+        return False
+    else:
+        for i in range(2, numero):
+            if numero % i == 0:
+                return False
+        return True
+    
 numero = int(input("Ingrese un número: "))
 
-if numero <= 1:
-    print(f"{numero} no es un número primo.")
+if es_primo(numero):
+    print(f"{numero} es un número primo.")
 else:
-    es_primo = True
-
-    for i in range(2,numero):
-        if numero % i == 0:
-            es_primo = False
-            break
-    if es_primo:
-        print(f"{numero} es un número primo.")
-    else:
-        print(f"{numero} no es un número primo.")
+    print(f"{numero} no es un número primo.")
