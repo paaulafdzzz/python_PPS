@@ -1,5 +1,5 @@
 def fibonacci(n):
-    a, b = 0, 1
+    a, b = 1, 1
     resultado = []
 
     for _ in range(n):
