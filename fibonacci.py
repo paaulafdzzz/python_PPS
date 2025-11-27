@@ -1,3 +1,4 @@
+@profile
 def fibonacci(n):
     a, b = 1, 1
     resultado = []
@@ -7,7 +8,6 @@ def fibonacci(n):
         a, b = b, a + b
 
     return resultado
-
 
 n = int(input("¿Cuántos términos quieres?: "))
 print(fibonacci(n))
